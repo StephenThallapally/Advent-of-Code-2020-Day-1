@@ -7,13 +7,11 @@ for x in a:
 #puzzle 1
 con1=False
 for x in a:
-    if(b[x]==True):
-        if(2020-x<len(b)):
-            if(b[2020-x]==True):
-                print("puzzle 1 numbers :",x,2020-x)
-                print("product : ",x*(2020-x))
-                con1=True
-                break
+    if(b[x]==True and b[2020-x]==True):
+        print("puzzle 1 numbers :",x,2020-x)
+        print("product : ",x*(2020-x))
+        con1=True
+        break
 #puzzle 2
 con2=False
 for i in range(len(a)):
